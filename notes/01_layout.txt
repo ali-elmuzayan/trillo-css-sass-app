@@ -1,0 +1,9 @@
+What you will learn in this lecture:
+-------------------------------------
+ => how to think about the overall layout of an app;
+ => use flexbox in a real world project for the first time 
+
+analyze our project:
+--------------------
+ => header part which will contain logo and search bar , 
+ => sidebar which is next to the overall 

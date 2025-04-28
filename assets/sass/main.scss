@@ -1,0 +1,13 @@
+// base folder
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "base/animation";
+
+// layout
+@import "layouts/header";
+@import "layouts/navigation";
+
+// components
+@import "components/user-info";
+@import "components/search-bar";

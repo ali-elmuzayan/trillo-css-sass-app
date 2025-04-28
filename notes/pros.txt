@@ -1,0 +1,18 @@
+why using CSS variables and not sass variables:
+----------------------------------------------
+ => because with sass variables you will need a preprocessor to compile it 
+    while css variable will be handled by CSS directly 
+ => we can manipulate it with JavaScript 
+ => it is easier to used in the calc function 
+ => CSS variables cascade and inherited 
+
+
+How to declare css property:
+-----------------------------
+ => it need to be exist in a scoop block 
+ => you can declare in any selector but then it will be used in this selector and its child 
+    so we will be in the root pseudo class
+ => :root is the global element 
+ => how to declare property : --color-primary 
+ => why start -- ; to make it different form the built in property 
+ 

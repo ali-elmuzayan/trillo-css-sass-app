@@ -1,0 +1,23 @@
+what you will learn in this lecture:
+------------------------------------
+ => why to use SVG icons vs. font icons;
+    
+ => how to find, generate and use SVG sprites in HTML;
+ => how to change the color of an SVG icon in CSS;
+
+
+why to use SVG icons vs. font icons:
+------------------------------------------------
+  => will make an issue because the browser will display and blank square 
+     or something instead of icon  
+  => with icon fonts screen readers for blind people will try to read but it will fail to that 
+
+  => how to change the color of the SVG:
+     - by fill: ; property
+
+
+----------
+Sidebar:
+----------
+ => z-index might not happen in some case 
+   - to solve that add: position: relative;

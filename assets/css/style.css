@@ -1,0 +1,246 @@
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #ff3366;
+  --color-primary-dark: #ba265d;
+  --color-grey-light-1: #faf9fd;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --white: #fff;
+  --shadow-dark: 0 2rem 3.6rem 1.8rem rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-grey-dark-2);
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 4.8rem auto;
+  box-shadow: var(--shadow-dark);
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+  fill: var(--color-grey-dark-3);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 4.8rem auto;
+  box-shadow: var(--shadow-dark);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  padding: 0 3.2rem;
+  height: 9vh;
+}
+
+.logo {
+  height: 3.25rem;
+}
+
+.content {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.hotel-view {
+  flex: 1 0 82%;
+  height: 100%;
+  background-color: black;
+  padding-inline-start: 20rem;
+}
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-nav {
+  list-style: none;
+  margin-top: 4rem;
+}
+
+.side-item {
+  position: relative;
+  transition: all 0.5s;
+}
+.side-item:before {
+  content: "";
+  height: 100%;
+  width: 3px;
+  background-color: var(--color-primary);
+  position: absolute;
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+}
+.side-item:hover::before {
+  transform: scaleY(1);
+  width: 100%;
+}
+.side-item:active::before {
+  background-color: var(--color-primary-light);
+}
+.side-item:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+.side-link {
+  padding: 1.2rem 0;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  justify-content: start;
+  font-size: 1.6rem;
+  position: relative;
+  z-index: 10;
+}
+.side-link .icon {
+  fill: currentColor;
+  margin-inline: 2rem;
+}
+
+.active {
+  background-color: var(--color-primary);
+}
+
+.copyright {
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--color-grey-light-4);
+  padding: 2.4rem;
+}
+
+.user-info {
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  color: var(--color-grey-dark-2);
+  overflow: hidden;
+}
+.user-info > * {
+  padding: 0 2rem;
+  text-align: center;
+  flex: 1 0 auto;
+  height: 100%;
+}
+.user-info > *:hover {
+  background-color: var(--color-grey-light-2);
+}
+
+.user-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.user-notification {
+  font-size: 0.8rem;
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 75%;
+  background-color: var(--color-primary);
+  color: var(--white);
+  position: absolute;
+  top: 1rem;
+  right: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-img {
+  height: 3.6rem;
+  border-radius: 50%;
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  color: var(--color-grey-dark-2);
+  gap: 0.5rem;
+  white-space: wrap;
+  text-overflow: ellipsis;
+}
+.user-details span {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.search-bar {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding: 0.975rem 2rem;
+  border: none;
+  background-color: var(--color-grey-light-2);
+  border-radius: 20px;
+  flex: 0 0 90%;
+  margin-right: -3.25rem;
+}
+.search-input::placeholder {
+  margin-left: 1rem;
+  color: rgba(51, 51, 51, 0.4117647059);
+  font-size: 1.4rem;
+}
+.search-input:focus {
+  flex-basis: 100%;
+  outline: none;
+}
+
+.search-btn {
+  border: none;
+  background-color: var(--color-grey-light-2);
+}
+.search-btn:focus {
+  outline: none;
+}
+.search-btn:active {
+  transform: translateY(2px);
+}
+
+/*# sourceMappingURL=style.css.map */

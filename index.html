@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Trillo application</title>
+  </head>
+  <body>
+    <!-- header  -->
+    <div class="container">
+      <header class="header">
+        <div class="logo-box">
+          <img src="assets/img/logo.png" alt="trillo logo" class="logo" />
+        </div>
+        <div class="search-bar">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="search-input"
+            placeholder="search hotels"
+          />
+          <button class="search-btn">
+            <svg class="icon">
+              <use
+                xlink:href="assets/img/sprite.svg#icon-magnifying-glass"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <div class="user-info">
+          <div class="user-icon">
+            <svg class="icon">
+              <use xlink:href="assets/img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-notification">7</span>
+          </div>
+          <div class="user-icon">
+            <svg class="icon">
+              <use xlink:href="assets/img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-notification">7</span>
+          </div>
+          <div class="user-details">
+            <img src="assets/img/user.jpg" alt="img" class="user-img" />
+            <span>ali ahmed</span>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-item active">
+              <a href="#hotel" class="side-link">
+                <svg class="icon">
+                  <use xlink:href="assets/img/sprite.svg#icon-home"></use>
+                </svg>
+                <span>Hotel</span>
+              </a>
+            </li>
+            <li class="side-item">
+              <a href="#flight" class="side-link">
+                <svg class="icon">
+                  <use
+                    xlink:href="assets/img/sprite.svg#icon-aircraft-take-off"
+                  ></use>
+                </svg>
+                <span>Flight</span>
+              </a>
+            </li>
+            <li class="side-item">
+              <a href="#car-rent" class="side-link">
+                <svg class="icon">
+                  <use xlink:href="assets/img/sprite.svg#icon-key"></use>
+                </svg>
+                <span>Car rental</span>
+              </a>
+            </li>
+            <li class="side-item">
+              <a href="#tours" class="side-link">
+                <svg class="icon">
+                  <use xlink:href="assets/img/sprite.svg#icon-map"></use>
+                </svg>
+                <span>Tours</span>
+              </a>
+            </li>
+          </ul>
+          <div class="copyright">
+            &copy; <span class="year">2025</span> by Ali elmuzayan, Inc.
+            designed by Jonas Schmedtmann
+          </div>
+        </nav>
+        <main class="hotel-view">hello</main>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
