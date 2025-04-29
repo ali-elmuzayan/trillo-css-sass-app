@@ -16,3 +16,7 @@ How to declare css property:
  => how to declare property : --color-primary 
  => why start -- ; to make it different form the built in property 
  
+
+@support property: 
+-------------------
+ => to add property for the project that not supported in some old browser
