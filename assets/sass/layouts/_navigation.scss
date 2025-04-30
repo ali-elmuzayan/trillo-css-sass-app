@@ -3,8 +3,6 @@
 //-------------
 .sidebar {
   background-color: var(--color-grey-dark-1);
-  flex: 0 0 18%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -13,6 +11,12 @@
 .side-nav {
   list-style: none;
   margin-top: 4rem;
+
+  @media only screen and (max-width: $bg-medium) {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+  }
 }
 
 .side-item {
@@ -42,6 +46,13 @@
   &:not(:last-child) {
     margin-bottom: 0.8rem;
   }
+
+  @media only screen and (max-width: $bg-medium) {
+    flex: 1;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .side-link {
@@ -60,6 +71,10 @@
     fill: currentColor;
     margin-inline: 2rem;
   }
+
+  @media only screen and (max-width: $bg-medium) {
+    justify-content: center;
+  }
 }
 
 .active {
@@ -71,4 +86,7 @@
   text-align: center;
   color: var(--color-grey-light-4);
   padding: 2.4rem;
+  @media screen and (max-width: $bg-medium) {
+    display: none;
+  }
 }

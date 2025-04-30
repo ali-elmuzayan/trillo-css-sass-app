@@ -29,20 +29,38 @@
 html {
   font-size: 62.5%;
 }
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 42.5%;
+  }
+}
 
 body {
   font-family: "Open Sans", sans-serif;
   color: var(--color-grey-dark-2);
   background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
-  background-size: cover;
-  background-repeat: no-repeat;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   max-width: 120rem;
-  margin: 4.8rem auto;
+  margin: 2rem;
   box-shadow: var(--shadow-dark);
+}
+@media only screen and (max-width: 75em) {
+  .container {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .icon {
@@ -97,7 +115,7 @@ body {
   align-items: center;
   background-color: var(--white);
   padding: 0 3.2rem;
-  height: 9vh;
+  height: 7.5vh;
   border-bottom: var(--line);
 }
 
@@ -107,8 +125,6 @@ body {
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
-  flex: 0 0 18%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -117,6 +133,13 @@ body {
 .side-nav {
   list-style: none;
   margin-top: 4rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .side-nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+  }
 }
 
 .side-item {
@@ -142,6 +165,14 @@ body {
 .side-item:not(:last-child) {
   margin-bottom: 0.8rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .side-item {
+    flex: 1;
+  }
+  .side-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
 
 .side-link {
   padding: 1.2rem 0;
@@ -159,6 +190,11 @@ body {
   fill: currentColor;
   margin-inline: 2rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .side-link {
+    justify-content: center;
+  }
+}
 
 .active {
   background-color: var(--color-primary);
@@ -170,11 +206,20 @@ body {
   color: var(--color-grey-light-4);
   padding: 2.4rem;
 }
+@media screen and (max-width: 56.25em) {
+  .copyright {
+    display: none;
+  }
+}
 
 .content {
   display: flex;
   height: 100vh;
-  justify-content: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .content {
+    flex-direction: column;
+  }
 }
 
 .hotel-view {
@@ -188,28 +233,38 @@ body {
 .detail {
   flex: 1 0 auto;
   background-color: var(--color-grey-light-3);
-  padding: 4rem;
+  padding: 4.5rem;
   display: flex;
   gap: 4rem;
   font-size: 1.4rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .detail {
+    padding: 3rem;
+  }
 }
 
 .description {
   flex: 0 0 60%;
   background-color: var(--color-grey-light-1);
   box-shadow: 0 1rem 2.4rem rgba(0, 0, 0, 0.1);
-  padding: 2.4rem;
+  padding: 3rem;
   font-size: 1.4rem;
 }
 .description .paragraph:not(:last-of-type) {
   margin-bottom: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .description {
+    padding: 2rem;
+  }
 }
 
 .recommend {
   display: flex;
   align-items: center;
 }
-.recommend-count {
+.recommend-title {
   margin-right: auto;
 }
 .recommend-friends {
@@ -236,6 +291,11 @@ body {
   padding: 3.5rem 0;
   background-color: var(--white);
   text-align: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .cta {
+    padding: 2.5rem 0;
+  }
 }
 .cta-heading {
   font-size: 2.4rem;
@@ -496,6 +556,12 @@ body {
   padding: 3rem;
   position: relative;
   overflow: hidden;
+}
+@media only screen and (max-width: 56.25em) {
+  .review {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
 }
 .review::before {
   content: "“";
