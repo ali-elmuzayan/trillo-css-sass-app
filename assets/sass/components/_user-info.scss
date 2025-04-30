@@ -15,6 +15,15 @@
   & > *:hover {
     background-color: var(--color-grey-light-2);
   }
+
+  & > *:hover svg {
+    transform: translateY(-2px);
+    scale: 1.2;
+  }
+  & > *:active svg {
+    transform: translateY(0);
+    scale: 1.1;
+  }
 }
 
 .user-icon {

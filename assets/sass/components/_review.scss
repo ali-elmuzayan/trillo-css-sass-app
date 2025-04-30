@@ -1,0 +1,71 @@
+.review {
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+  margin-bottom: 3.5rem;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    font-size: 20rem;
+    top: -2.55rem;
+    left: -0.7rem;
+    line-height: 1;
+    font-family: sans-serif;
+    color: var(--color-grey-light-2);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--color-primary);
+  }
+
+  &-text {
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 10;
+  }
+
+  &-user {
+    display: flex;
+    align-items: center;
+
+    // justify-content: space-between;
+
+    &-img {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 50%;
+    }
+
+    &-info {
+      margin-right: auto;
+      margin-left: 1.5rem;
+    }
+
+    &-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    &-date {
+      font-size: 1rem;
+      color: var(--color-grey-dark-3);
+    }
+
+    &-rate {
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: var(--color-primary);
+    }
+  }
+}

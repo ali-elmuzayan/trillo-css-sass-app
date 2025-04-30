@@ -17,6 +17,27 @@ How to declare css property:
  => why start -- ; to make it different form the built in property 
  
 
+
+mask property;
+---------------
+ => mask-image: is  a property that specifies a mask layer image 
+ => the mask layer image can be PNG image, SVG image, a CSS gradient or and SVG <mask> elemennt </mask> 
+ => browser support is not great so we will need to use prefixes 
+
+
+figure tag in html: 
+--------------------
+ => this element is perfect for review and also perfect as container for images 
+ => example in our project: 
+    - add figure item which will have 2 figure item each one act as a box of review 
+
+
 @support property: 
 -------------------
  => to add property for the project that not supported in some old browser
+
+
+margin-right: auto;
+=------------------
+ => use it when you move item to occupy the rest of space to it 
+

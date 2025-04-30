@@ -8,8 +8,11 @@
 @import "layouts/header";
 @import "layouts/navigation";
 @import "layouts/content";
+@import "layouts/gallery";
+@import "layouts/review";
 
 // components
 @import "components/user-info";
 @import "components/search-bar";
 @import "components/button";
+@import "components/review";
